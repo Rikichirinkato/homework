@@ -4,54 +4,51 @@
     <meta charset="UTF-8">
     <title>HOME</title>
     <link href="style/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 <body>
     <header>
         <button class="nav-btn"></button>
-        <a href="" class="logo">Logo</a>
+        <a href="" class="logo"></a>
         <nav class="navbar">
-            <a href="">home</a>
+            <a href="">Home</a>
             <a href="">About</a>
             <a href="">Services</a>
             <a href="">Pages</a>
-            <a href="">blog</a>
-            <a href=''>contacts</a>
+            <a href="">Blog</a>
+            <a href=''>Contacts</a>
         </nav>
         <aside class="links">
-            <a href="">ins</a>
-            <a href="">fb</a>
-            <a href="">p</a>
+            <a href="instagram.com" class="instagram"></a>
+            <a href="facebook.com" class="facebook"></a>
+            <a href="pinterest.com" class="pinterest"></a>
         </aside>
     </header>
     <main>
         <section class="description">
-            <button class="corousel-btn">prev</button>
+            <button class="corousel-btn" id="prev">Prev</button>
             <article class="description-info">
-                <h1 class="description-info-header">Professional Makeup Artist</h1>
-                <small>Whatever the occasion is, be sure that my professional makeup work and products will make you shine and stand out!</small>
-                <a href="">Read more→</a>
+                <h1 class="description-info-header">Professional Makeup Artist</h1><br>
+                <small>Whatever the occasion is, be sure that my professional makeup work and products will make you shine and stand out!</small><br><br>
+                <a href="" class="description-read-more">Read more→</a>
             </article>
-            <article class="description-carousel">
-                <img src="#" alt=""/>                
-                <img src="#" alt=""/>                
-                <img src="#" alt=""/>                
-            </article>
-            <button class="corousel-btn">next</button>
+            <button class="corousel-btn" id="next">Next</button>
         </section>
         <section class="services">
             <ul class="price-list">
                 <li class="price-list-item">
-                    <p>
+                    <p class="price-list-each">
                         <strong class="text-big"><a href=''>Bridal Makeup</a></strong><br><small>from $156.00</small>
                     </p>
                 </li>
                 <li>
-                    <p>
+                    <p class="price-list-each">
                         <strong class="text-big"><a href=''>Bridal Makeup</a></strong><br><small>from $156.00</small>
                     </p>
                 </li>
                 <li>
-                    <p>
+                    <p class="price-list-each">
                         <strong class="text-big"><a href=''>Bridal Makeup</a></strong><br><small>from $156.00</small>
                     </p>
                 </li>
@@ -62,21 +59,21 @@
                     <small>To fix the focus on you and on highlighting your beauty and channeling it outwards, me and my team of professional visagists will go any extra mile and use only the best makeup products!</small>
                 </p>
             </article>
-            <a href="" class="services-description-appointment"> make</a>
+            <a href="" class="services-description-appointment link-btn">Make an Appointment</a>
         </section>
         <section class="nominations">
-            <img src="#" alt=""/>
-            <img src="#" alt=""/>
-            <img src="#" alt=""/>
-            <img src="#" alt=""/>
+            <img src="img/sert1.png" alt=""/>
+            <img src="img/sert2.png" alt=""/>
+            <img src="img/sert3.png" alt=""/>
+            <img src="img/sert4.png" alt=""/>
         </section>
         <section class="works">
             <h1 class="works-header">My Works</h1>
             <p class="works-specification">More than <i>300 </i>makeup projects in the portfolio</p>
-            <a href="" class="works-link">see all works</a>    
-            <img src="#" class="works-examples" alt=""/>
-            <img src="#" class="works-examples" alt=""/>
-            <img src="#" class="works-examples" alt=""/>
+            <a href="" class="link-btn">see all works</a>    
+            <img src="img/01.jpg" class="works-examples" alt=""/>
+            <img src="img/02.jpg" class="works-examples" alt=""/>
+            <img src="img/03.jpg" class="works-examples" alt=""/>
         </section>
     </main>
     <footer class="footer">
@@ -87,23 +84,25 @@
             <li><a href="">6036 Richmond hwy.,<br>Alexandria, VA, 2230</a></li>
         </ul>
         <nav class="footer-children">
-            <p class="footer-headers">About Us</p>
+            <p class="footer-headers">ABOUT US</p>
             <a href="">Portfolio</a>
             <a href="">About Us</a>
             <a href="">Testimonials</a>
             <a href="">Blog</a>
         </nav>
         <nav class="footer-children">
-            <p class="footer-headers">Services</p>
+            <p class="footer-headers">SERVICES</p>
             <a href="">Bridal Makeup</a>
             <a href="">Special Makeup</a>
             <a href="">Makeup Lessons</a>
         </nav>
         <form action="URL" name="subscribe" class="footer-children">
             <p class="footer-headers">SUBSCRIBE TO NEWSLETTER</p>
-            <input type="email"/>
+            <p class="footer-children-small">Get the latest tips on makeup and facial care!</p>
+            <input type="email"/ class="email-field" placeholder="E-mail..."/>
+            <input type="button" class="sub-btn"/>
         </form>
-        <div>copyright</div>
+        <div>MakeUp © 2017. Privacy Policy</div>
     </footer>
 </body>
 </html>

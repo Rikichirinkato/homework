@@ -1,6 +1,18 @@
+@font-face{
+    font-family: 'Lato', sans-serif;
+}
+@font-face{
+    font-family:"Playfair Display";
+    font-style:italic;
+    font-weight:bolder;
+}
+
 *{
     margin:0;
     padding:0;
+    text-decoration:none;
+    list-style-type:none;
+    font-family:'Lato';
 }
 header{
     width:100%;
@@ -9,26 +21,92 @@ header{
     flex-direction:row;
     align-items:center;
     justify-content:space-around;
+    position:fixed;
+    background-color:#ffffff;
+    z-index:10;
+    top:0;
 }
 .nav-btn{
     display:inline-block;
 }
+.navbar{
+    font-weight:100;
+}
+.navbar a:hover{
+    color:pink;
+}
 .navbar a{
     display:none;
 }
+aside{
+    width:100px;
+    height:50px;
+    display:inline-block;
+}
+aside>*{
+    width:26px;
+    height:26px;
+    background-size:contain;
+    background-color:grey
+}
+.instagram{
+    background-image:url(../img/instagram.png);
+}
+.facebook{
+    background-image:url(../img/facebook.png);
+}
+.pinterest{
+    background-image:url(../img/pinterest.png);
+}
+main{
+    margin-top:70px;
+}
 .description{
     width:90%;
-    height:570px;
+    height:700px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
     background-color:antiquewhite;
     padding:0 5%;
+    background-image:url(../img/slide0.png);
+    background-size:cover;
+    background-position:center;
 }
 .corousel-btn{
+    width:120px;
+    height:46px;
+    font-size:30px;
+    font-family:"times new roman";
+    border:0;
     display:none;
+    background-color:rgb(245,250,244);
+    border-bottom:5px solid #c9ddc9;
 }
-
+#prev{
+    left:0;
+    text-align:right;
+}
+#next{
+    right:0;
+    text-align:left;
+}
+#prev:hover,#next:hover{
+    color:#e25e90;
+    text-align:center;
+}
+.description-info-header{
+    font-size:55px;
+    font-family:"times new roman";
+}
+.description-read-more{
+    font-weight:bold;
+    font-size:20px;
+    color:black;
+}
+small{
+    font-size:14px;
+    color:#9b9b9b;
+}
 
 .services{
     width:90%;
@@ -38,13 +116,44 @@ header{
     flex-direction:column;
     align-items:center;
     justify-content:space-around;
+    background-image:url(../img/bg.png);
+    background-size:cover;
+    background-position:center;
 }
 .services-description-appointment{
-   order:3;
-    width:260px;
-    height:46px;
-    border:5px solid grey;
-    text-align:center;
+    order:3;
+}
+
+.link-btn{
+    width:auto;
+    height:auto;
+    padding:11px 45px;
+    border:2px solid #ebebeb;
+    font-size:20px;
+    font-weight:600;
+    font-family:"times new roman";
+}
+.link-btn:hover{
+    color:white;
+    background-color:#3f3e40;
+}
+.services-description-title{
+    width:200px;
+    font-size:55px;
+    font-family:"times new roman";
+}
+.services-description-title i{
+    font-family:"Playfair Display";
+}
+.price-list-each{
+    margin-top:50px;
+}
+.text-big{
+    font-size:24px;
+}
+.text-big a{
+    color:black;
+    font-family:"times new roman";
 }
 
 .nominations{
@@ -53,7 +162,7 @@ header{
     padding:0 10%;
     display:flex;
     flex-direction:column;
-    background-color:antiquewhite;
+    background-position:center;
 }
 .nominations img{
     width:118px;
@@ -79,26 +188,76 @@ header{
     width:275px;
     height:70px;
     font-size:55px;
+    font-family:"times new roman";
 }
 .works-specification{
-    width:520px;
+    width:550px;
+    color: #9b9b9b;
+    font-size:26px;
+    font-weight: 400;
+    font-family:"times new roman";
 }
-.works-link{
-    width:205px;
-    height:50px
+.works-specification i{
+    font-family:"Playfair Display";
+    font-weight:bolder;
 }
+.works-examples{
+    border:11px solid #f2f3f8;
+}
+
+
 .footer{
     width:100%;
     height: auto;
-    display:flex;
+    display:inline-flex;
     flex-direction: column;
     justify-content:space-around;
-    align-items:center;
+    align-content:center;
+    align-items: center;
+    background-color: #2c2c2c;
+    color:white;
+    font-size:14px;
+}
+.footer-headers{
+    letter-spacing:3px;
+}
+.footer div{
+    margin-top:100px;
+    color:#6c6c6c;
 }
 .footer nav{
     display:flex;
     flex-direction: column; 
-    margin:20px 0;
+}
+.footer-children a{
+    color:#6c6c6c;
+}
+.footer-children a:hover{
+    color:white;
+}
+.footer-children-small{
+    width:250px;
+    color:#6c6c6c;
+}
+.footer-children>input{
+    margin-top:20px;
+    float:left;
+}
+.email-field{
+    width:136px;
+    height:24px;
+    padding:13px 19px 13px 65px;
+    background-color:#393939;;
+    border:0;
+}
+.sub-btn{
+    width:55px;
+    height:50px;
+    background-color:#e25e90;
+    border:0;
+}
+.footer-children>*{
+    margin-top:15px;
 }
 
 @media(max-width:991px){
@@ -111,8 +270,8 @@ header{
 }
 @media(min-width:992px){
     header{
-        width:70%;
-        padding:0 15%;
+        width:80%;
+        padding:0 10%;
     }
     .nav-btn{
         display:none;
@@ -121,30 +280,28 @@ header{
         display:inline-flex;
     }
     .logo{
-        margin:0 100px;
+        width:134px;
+        height:36px;
+        background-image:url(../img/logo.png);
+        
     }
     .navbar a{
         margin:0 30px;
-    }
-    .links{
-        margin:70px;
     }
     
     .description{
         width:100%;
         height:570px;
-        display:flex;
-        flex-direction:row;
         padding:0;
+        justify-content:space-between;
     }
     .corousel-btn{
         display:inline-block; 
     }
-    .description-carousel{
-        width:50%;
-    }
     .description-info{
-        width:25%;
+        width:400px;
+        position:absolute;
+        margin-left:15%;
     }
     
     .services{
@@ -155,18 +312,26 @@ header{
         flex-wrap:wrap;
         align-items:center;
     }
-    .price-list,.services-description{
+    .price-list{
         width:50%;
     }
-    
+    .services-description{
+        width:300px;
+        margin-left:20%;
+    }
+    .services-description-appointment{
+        margin-left:70%; 
+        margin-top:-400px;
+    }
     
     .nominations{
         width:60%;
-        height:288px;
+        height:285px;
         padding:0 20%;
         flex-direction:row;
         align-items: center;
         justify-content:space-around;
+        background-image:url(../img/bgimg.jpg);
     }
     
     
@@ -188,11 +353,6 @@ header{
     .works-specification{
         width:520px;
     }
-    .works-link{
-        width:205px;
-        height:50px
-    }
-    
     
     .footer{
         width:80%;
@@ -206,7 +366,6 @@ header{
     .footer nav{
         display:flex;
         flex-direction: column; 
-        margin:20px 0;
     }
     .footer-children{
         width:300px;
