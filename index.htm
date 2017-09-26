@@ -9,7 +9,12 @@
 </head>
 <body>
     <header>
-        <button class="nav-btn"></button>
+        <input type="checkbox" id="nav">
+        <label for="nav" class="nav-btn">
+            <div class="sand" id="one"></div>
+            <div class="sand" id="two"></div>
+            <div class="sand" id="tree"></div>
+        </label>
         <a href="" class="logo"></a>
         <nav class="navbar">
             <a href="">Home</a>
@@ -19,10 +24,16 @@
             <a href="">Blog</a>
             <a href=''>Contacts</a>
         </nav>
+        <input type="checkbox" id="aside">
+        <label for="aside" class="aside-btn">
+            <div class="circle" id="first"></div>
+            <div class="circle"></div>
+            <div class="circle" id="second"></div>
+        </label>
         <aside class="links">
-            <a href="instagram.com" class="instagram"></a>
-            <a href="facebook.com" class="facebook"></a>
-            <a href="pinterest.com" class="pinterest"></a>
+            <a href="http://instagram.com" class="instagram"><img src="img/instagram.png"></a>
+            <a href="http://facebook.com" class="facebook"><img src="img/facebook.png"></a>
+            <a href="http://pinterest.com" class="pinterest"><img src="img/pinterest.png"></a>
         </aside>
     </header>
     <main>
@@ -71,9 +82,11 @@
             <h1 class="works-header">My Works</h1>
             <p class="works-specification">More than <i>300 </i>makeup projects in the portfolio</p>
             <a href="" class="link-btn">see all works</a>    
-            <img src="img/01.jpg" class="works-examples" alt=""/>
-            <img src="img/02.jpg" class="works-examples" alt=""/>
-            <img src="img/03.jpg" class="works-examples" alt=""/>
+            <div class="works-img">
+                <img src="img/01.jpg" class="works-examples" alt=""/>
+                <img src="img/02.jpg" class="works-examples" alt=""/>
+                <img src="img/03.jpg" class="works-examples" alt=""/>
+            </div>
         </section>
     </main>
     <footer class="footer">
